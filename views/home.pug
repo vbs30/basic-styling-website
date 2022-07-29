@@ -1,0 +1,42 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js")
+
+block style 
+    style
+      include ../static/style.css
+      
+
+block content
+
+    section#intro 
+        div Welcome to my awesome page
+        div.small Vinayak Suryavanshi
+
+    section#mission
+        h2 Cards Display
+        div.card
+            h3 Vinu
+            div.card-box
+                div.content
+                    p Ikde photo thevaycha hota pn ikde basatch nhavta majyakadun so kadla   
+        div.card
+            h3 Yuti
+            div.card-box
+                div.content
+                    p Atta ikde pn photo hava tuja pn to bhetlyawar milun thevuya 
+        div.card
+            h3 Y and V 
+            div.card-box     
+                div.content
+                    p Ha lavkarch kaduya photo apla doghancha sundar jodi made for each other type wala kadu     
+
+    section#ad 
+        h2 ad section
+        div#sponsor
+            img(src="/static/logos/google.jpg", alt="Error not found", class="spimg")
+            img(src="/static/logos/microsoft.jpg", alt="Error not found", class="spimg")
+            img(src="/static/logos/accenture.png", alt="Error not found", class="spimg")
+            img(src="/static/logos/dell.png", alt="Error not found", class="spimg")
+
